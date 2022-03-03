@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <EduHeader/>
+    <EduMain/>
+    <EduFooter/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import EduHeader from './components/EduHeader.vue'
+import EduMain from './components/EduMain.vue'
+import EduFooter from './components/EduFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    EduHeader,
+    EduMain,
+    EduFooter
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+// Importazione foglio di stile generale
+@import "./assets/style/common.scss";
+
 </style>
