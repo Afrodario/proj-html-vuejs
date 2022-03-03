@@ -1,23 +1,21 @@
 <template>
-  <header class="debug">
+  <header>
         <nav class="main-nav flex">
           <!-- Inizio parte sinistra navbar -->
             <EduLogo/>
           <!-- Fine parte sinistra navbar -->
           <!-- Inizio parte destra navbar -->
-          <nav class="inner-nav">
-              <ul class="flex">
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
+          <nav class="inner-nav flex">
+              <ul v-for="(item, index) in innerNav"
+                :key="index" 
+              class="flex">
                   <li>
-                      <button>View Courses</button>
+                      <a href="#">
+                          {{item}}
+                      </a>
                   </li>
               </ul>
+              <button class="main-btn">View Courses</button>
           </nav>
           <!-- Fine parte destra navbar -->
         </nav>
@@ -31,6 +29,19 @@ export default {
     name: "EduHeader",
     components: {
         EduLogo,
+    },
+    data() {
+        return {
+            innerNav: [
+                "Home",
+                "Courses",
+                "About Us",
+                "News",
+                "Pages",
+                "Contact",
+                "Purchase"
+            ]
+        }
     }
 
 }
@@ -48,6 +59,19 @@ export default {
             justify-content: space-between;
             align-items: center;
             padding: 20px;
+            line-height: 50px;
+
+            // Inizio inner nav
+            .inner-nav {
+                li {
+                    a {
+                        padding: 10px;
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+            }
+            // Fine inner nav
         }
         // Fine main nav
     }
