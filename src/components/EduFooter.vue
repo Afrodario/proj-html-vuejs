@@ -1,13 +1,16 @@
 <template>
   <footer class="debug flex">
       <div class="debug footer-themes flex flex-col">
-          <button>Purchase</button>
-          <button>Related</button>
+          <div><span>Purchase</span></div>
+          <div><span>Related</span></div>
       </div>
 
       <div class="debug footer-info flex flex-col">
           <EduLogo/>
-          <p>Lorem ipsum</p>
+          <p>EduPrime is the most versatile WordPress theme for
+              educational purposes, showcasing universities, courses,
+              secondary schools etc.
+          </p>
           <div class="footer-icons">
               ICONS
           </div>
@@ -16,18 +19,24 @@
       <div class="debug footer-nav flex">
           <nav>
               <h3>Get EduPrime</h3>
-              <ul>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
+              <ul v-for="(item, index) in navLeft"
+                    :key="index">
+                <li>
+                    <a href="#">
+                        {{item.text}}
+                    </a>
+                </li>
               </ul>
           </nav>
           <nav>
               <h3>Networking</h3>
-              <ul>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
+              <ul v-for="(item, index) in navRight"
+                    :key="index">
+                <li>
+                    <a href="#">
+                        {{item.text}}
+                    </a>
+                </li>
               </ul>
           </nav>
           
@@ -52,6 +61,62 @@ export default {
     name: "EduFooter",
     components: {
         EduLogo,
+    },
+    data () {
+        return {
+            navLeft: [
+                {
+                    id: 0,
+                    text: "Request a website"
+                },
+                {
+                    id: 1,
+                    text: "Browse Themes"
+                },
+                {
+                    id: 2,
+                    text: "Payment Options"
+                },
+                {
+                    id: 3,
+                    text: "Support System"
+                },
+                {
+                    id: 4,
+                    text: "Checkout"
+                },
+                {
+                    id: 5,
+                    text: "Purchase Theme"
+                },                
+            ],
+            navRight: [
+                {
+                    id: 0,
+                    text: "Purchase Theme"
+                },
+                {
+                    id: 1,
+                    text: "Our Benefits"
+                },
+                {
+                    id: 2,
+                    text: "Our Team"
+                },
+                {
+                    id: 3,
+                    text: "Our Services"
+                },
+                {
+                    id: 4,
+                    text: "Other Products"
+                },
+                {
+                    id: 5,
+                    text: "My Account"
+                },                
+            ]
+        }
     }
 }
 </script>
@@ -62,23 +127,28 @@ export default {
     footer {
         height: 300px;
         background-color: $brandColor;
-
-        div.debug {
-            width: calc(100% / 4);
-        }
+        color: white;
 
         .footer-info {
             justify-content: center;
             align-items: center;
+            width: 25%;
         }
 
         .footer-nav {
             justify-content: space-around;
             align-items: center;
+            width: 25%;
+
+            a {
+                color: white;
+            }
+
         }
 
         .footer-search {
             align-items: center;
+            width: 40%;
         }
 
     }
