@@ -43,11 +43,12 @@
       </div>
 
       <div class="debug footer-search flex flex-col">
-        <input type="text" placeholder="Search...">
+        <input class="search-bar" type="text" placeholder="Search...">
         <h4>Search Categories</h4>
         <div class="footer-tags flex">
-            <ul>
-                <li>Economy</li>
+            <ul v-for="(item, index) in tags"
+                :key="index">
+                <li class="category-tag">{{item}}</li>
             </ul>
         </div>
         <span>ModelTheme. All rights reserved.</span>
@@ -115,7 +116,8 @@ export default {
                     id: 5,
                     text: "My Account"
                 },                
-            ]
+            ],
+            tags: ["Economy", "Design", "Coaching", "Business", "Medicine", "Law", "Fitness"]
         }
     }
 }
