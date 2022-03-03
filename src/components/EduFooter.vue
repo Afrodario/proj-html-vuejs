@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="debug">
       FOOTER
   </footer>
 </template>
@@ -11,5 +11,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    // Inizio footer
+    footer {
+        height: 300px;
+        background-color: green;
+    }
+    // Fine footer
 </style>

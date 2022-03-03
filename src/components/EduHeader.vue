@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="debug">
       HEADER
   </header>
 </template>
@@ -12,5 +12,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    // Inizio header
+    header {
+        height: 200px;
+        background-color: red;
+    }
+    // Fine header
 </style>
