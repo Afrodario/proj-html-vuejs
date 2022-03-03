@@ -16,6 +16,10 @@
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 ul {
     list-style-type: none;
 }
