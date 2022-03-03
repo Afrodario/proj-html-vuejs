@@ -24,5 +24,6 @@ export default {
 <style lang="scss">
 // Importazione foglio di stile generale
 @import "./assets/style/common.scss";
+@import "./assets/style/variables.scss";
 
 </style>
