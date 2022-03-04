@@ -14,7 +14,19 @@
             <EduFacultyTab :facultiesList="facultiesList"/>
         </div>
       </div>
-  </section>
+
+        <div class="container faculty-active flex">
+            <div class="faculty-selected-left">
+                <img src="../../assets/img/Gavel-Illustration-e1556884768193.png" alt="Illustrazione Martelletto">
+            </div>
+            <div class="faculty-selected-right">
+                <h1>Law Faculty</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos alias reprehenderit suscipit, aspernatur sunt. Earum labore recusandae perspiciatis accusantium incidunt ducimus atque explicabo similique repellendus nam. Minima, magnam eum.</p>
+                <button class="main-btn brand-btn">Read More</button>
+            </div>
+        </div>
+
+    </section>    
 </template>
 
 <script>
@@ -70,6 +82,10 @@ section.faculties {
             margin: 0 auto;
             justify-content: center;
         }
+    }
+
+    .faculty-active {
+        width: calc(100% / 2);
     }
 }
 </style>
