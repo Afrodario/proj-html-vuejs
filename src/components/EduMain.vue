@@ -6,6 +6,9 @@
       <EduYears/>
       <EduEvents/>
       <EduLatestCourses/>
+      <EduMethod/>
+      <EduFees/>
+      <EduNewsletter/>
   </main>
 </template>
 
@@ -16,6 +19,10 @@ import EduFaculties from '../components/partials/EduFaculties.vue'
 import EduYears from '../components/partials/EduYears.vue'
 import EduEvents from '../components/partials/EduEvents.vue'
 import EduLatestCourses from '../components/partials/EduLatestCourses.vue'
+import EduMethod from '../components/partials/EduMethod.vue'
+import EduFees from '../components/partials/EduFees.vue'
+import EduNewsletter from '../components/partials/EduNewsletter.vue'
+
 
 export default {
     name: "EduMain",
@@ -25,7 +32,10 @@ export default {
         EduFaculties,
         EduYears,
         EduEvents,
-        EduLatestCourses
+        EduLatestCourses,
+        EduMethod,
+        EduFees,
+        EduNewsletter
     }
 }
 </script>
