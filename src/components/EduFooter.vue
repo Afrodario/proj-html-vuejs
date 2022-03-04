@@ -46,9 +46,10 @@
         <input class="search-bar" type="text" placeholder="Search...">
         <h4>Search Categories</h4>
         <div class="footer-tags flex">
-            <ul v-for="(item, index) in tags"
-                :key="index">
-                <li class="category-tag">{{item}}</li>
+            <ul class="flex">
+                <li v-for="(item, index) in tags"
+                :key="index" 
+                class="category-tag">{{item}}</li>
             </ul>
         </div>
         <span>ModelTheme. All rights reserved.</span>
@@ -149,8 +150,17 @@ export default {
         }
 
         .footer-search {
+            justify-content: space-around;
             align-items: center;
             width: 40%;
+        }
+
+        .footer-tags {
+            ul {
+                flex-wrap: wrap;
+                width: 70%;
+                margin: 0 auto;
+            }
         }
 
     }

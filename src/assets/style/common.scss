@@ -10,6 +10,12 @@
     border: 1px solid black;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
 .logo img {
     width: 250px;
 }
@@ -37,6 +43,16 @@ ul {
     border-radius: 35px;
     color: white;
     background-color: $buttonColor;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.apply-btn {
+    border: transparent;
+    padding: 15px;
+    border-radius: 35px;
+    color: $brandColor;
+    background-color: white;
     font-weight: bold;
     font-size: 20px;
 }
