@@ -4,7 +4,7 @@
             <div class="courses-left">
                 <div class="courses-text">
                     <img class="icon" src="../../assets/img/Books-icon.png" alt="Icona libri">
-                    <h2>Thousands of courses for any type of student</h2>
+                    <h1>Thousands of courses for any type of student</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consectetur reiciendis ullam a! Itaque commodi aspernatur est rem autem assumenda, quasi possimus sed pariatur ullam nobis inventore quas provident omnis.</p>
                     <button class="main-btn">Browse through courses</button>
                 </div>
@@ -41,7 +41,7 @@ section.courses {
             width: 50%;
             padding: 20px;
 
-            img, h2, p {
+            img, h1, p {
                 padding: 10px 0;
             }
         }
