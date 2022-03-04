@@ -1,15 +1,18 @@
 <template>
   <main class="debug">
       <EduJumbotron/>
+      <EduCourses/>
   </main>
 </template>
 
 <script>
 import EduJumbotron from '../components/partials/EduJumbotron.vue'
+import EduCourses from '../components/partials/EduCourses.vue'
 export default {
     name: "EduMain",
     components: {
         EduJumbotron,
+        EduCourses
     }
 }
 </script>
@@ -18,7 +21,6 @@ export default {
 @import "../assets/style/variables.scss";
 // Inizio main
 main {
-    height: 100vh;
     background-color: blue;
 }
 // Fine main
