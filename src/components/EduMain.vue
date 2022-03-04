@@ -5,6 +5,7 @@
       <EduFaculties/>
       <EduYears/>
       <EduEvents/>
+      <EduLatestCourses/>
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import EduCourses from '../components/partials/EduCourses.vue'
 import EduFaculties from '../components/partials/EduFaculties.vue'
 import EduYears from '../components/partials/EduYears.vue'
 import EduEvents from '../components/partials/EduEvents.vue'
+import EduLatestCourses from '../components/partials/EduLatestCourses.vue'
 
 export default {
     name: "EduMain",
@@ -22,7 +24,8 @@ export default {
         EduCourses,
         EduFaculties,
         EduYears,
-        EduEvents
+        EduEvents,
+        EduLatestCourses
     }
 }
 </script>
