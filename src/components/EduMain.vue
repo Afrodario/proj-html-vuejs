@@ -9,6 +9,7 @@
       <EduMethod/>
       <EduFees/>
       <EduNewsletter/>
+      <EduPartners/>
   </main>
 </template>
 
@@ -22,6 +23,7 @@ import EduLatestCourses from '../components/partials/EduLatestCourses.vue'
 import EduMethod from '../components/partials/EduMethod.vue'
 import EduFees from '../components/partials/EduFees.vue'
 import EduNewsletter from '../components/partials/EduNewsletter.vue'
+import EduPartners from '../components/partials/EduPartners.vue'
 
 
 export default {
@@ -35,7 +37,8 @@ export default {
         EduLatestCourses,
         EduMethod,
         EduFees,
-        EduNewsletter
+        EduNewsletter,
+        EduPartners
     }
 }
 </script>
