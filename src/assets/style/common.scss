@@ -40,29 +40,30 @@ a {
     width: 50px;
 }
 
+.text-regular {
+    font-family: arial;
+}
+
 //Elementi comuni
-.main-btn {
+.btn {
     border: transparent;
     padding: 15px;
     border-radius: 35px;
     color: white;
-    background-color: $buttonColor;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-.apply-btn {
-    border: transparent;
-    padding: 15px;
-    border-radius: 35px;
-    color: $brandColor;
-    background-color: white;
-    font-weight: bold;
-    font-size: 20px;
+.main-btn {
+    background-color: $buttonColor;
 }
 
 .brand-btn {
     background-color: $brandColor;
+}
+
+.apply-btn {
+    color: $brandColor;
 }
 
 .search-bar {

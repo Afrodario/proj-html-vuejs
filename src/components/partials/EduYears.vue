@@ -11,20 +11,20 @@
             <div class="years-timeline">
                 <div class="years-paragraph demo-p">
                     <h3>Demo Classes</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="text-regular">In the first week, students try to accomodate with the teaching style and choose their optional courses.</p>
                 </div>
                 <div class="years-paragraph graduation-p">
                     <h3>Graduation Day</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="text-regular">On the day of graduation, all students gather for the ceremony and then network and party among others.</p>
                 </div>
                 <img id="timeline" src="../../assets/img/Timeline-Item.png">
                 <div class="years-paragraph orientation-p">
                     <h3>Orientation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="text-regular">First day of the university year, all students gather for the opening ceremony and then network with others.</p>
                 </div>
                 <div class="years-paragraph evaluation-p">
                     <h3>Evaluation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="text-regular">At the end of a semester, students take a general evaluation test for every subject they're learning.</p>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@ section.years {
             color: white;
             background-color: red;
             display: block;
-            margin: 0 auto;
+            margin: 30px auto;
             width: 20%;
         }
     }
@@ -69,7 +69,7 @@ section.years {
         position: relative;
 
         .graduation-p {
-            right: 5%;
+            right: 13%;
         }
 
         .demo-p {
@@ -77,13 +77,13 @@ section.years {
         }
 
         .evaluation-p {
-            right: 25%;
-            bottom: 5%;
+            right: 31%;
+            bottom: 0;
         }
 
         .orientation-p {
-            bottom: 5%;
-            left: 10%;
+            bottom: 0;
+            left: 13%;
         }
     }
 

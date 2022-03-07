@@ -8,8 +8,9 @@
             <div class="fees-info fees-text">
                 <img class="icon" src="../../assets/img/Exam-icon-1.png">
                 <h1>Variables fees for international students</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, suscipit porro. Ullam quis iure aut nulla obcaecati ipsam eos, nobis ducimus animi expedita, architecto tempora ipsum. Laudantium minima facere consectetur!</p>
-                    <button class="main-btn brand-btn">List of Fees</button>
+                <p class="text-regular">EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students.
+                    Every teacher from our university has an influence on how students are evaluated at his/her subject.</p>
+                    <button class="btn brand-btn">List of Fees</button>
             </div>
           </div>
       </div>

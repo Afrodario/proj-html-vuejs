@@ -13,7 +13,7 @@
 
       <div class="footer-info flex flex-col">
           <EduLogo/>
-          <p>EduPrime is the most versatile WordPress theme for
+          <p class="text-regular">EduPrime is the most versatile WordPress theme for
               educational purposes, showcasing universities, courses,
               secondary schools etc.
           </p>
@@ -47,7 +47,7 @@
               <h3>Get EduPrime</h3>
               <ul v-for="(item, index) in navLeft"
                     :key="index">
-                <li>
+                <li class="text-regular">
                     <a href="#">
                         {{item.text}}
                     </a>
@@ -58,7 +58,7 @@
               <h3>Networking</h3>
               <ul v-for="(item, index) in navRight"
                     :key="index">
-                <li>
+                <li class="text-regular">
                     <a href="#">
                         {{item.text}}
                     </a>
@@ -69,16 +69,22 @@
       </div>
 
       <div class="footer-search flex flex-col">
-        <input class="search-bar" type="text" placeholder="Search...">
+        <div class="search-input">
+            <input class="search-bar" type="text" placeholder="Search...">
+            <button class="search-button flex">
+                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+            </button>
+        </div>
+        
         <h4>Search Categories</h4>
         <div class="footer-tags flex">
             <ul class="flex">
                 <li v-for="(item, index) in tags"
                 :key="index" 
-                class="category-tag">{{item}}</li>
+                class="category-tag text-regular">{{item}}</li>
             </ul>
         </div>
-        <span>ModelTheme. All rights reserved.</span>
+        <span class="text-regular">ModelTheme. All rights reserved.</span>
 
         <div class="arrow-up flex">
             <font-awesome-icon icon="fa-solid fa-chevron-up" />
@@ -222,6 +228,24 @@ export default {
             align-items: center;
             width: 40%;
             position: relative;
+
+            .search-input {
+                position: relative;
+                .search-button {
+                    width: 55px;
+                    height: 55px;
+                    background-color: $buttonColor;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 15px;
+                    border: none;
+                }
+            }
 
             .arrow-up {
                 width: 40px;

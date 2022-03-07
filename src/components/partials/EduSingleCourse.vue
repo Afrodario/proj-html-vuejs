@@ -13,7 +13,7 @@
         <font-awesome-icon icon="fa-regular fa-money-bill-1" />
             Price: {{item.price}}
         </span>
-        <button class="main-btn brand-btn">
+        <button class="btn brand-btn">
         <font-awesome-icon icon="fa-regular fa-eye" />
             View Course
         </button>

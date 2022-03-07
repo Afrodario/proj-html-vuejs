@@ -3,7 +3,7 @@
       <div class="container">
           <div class="faculties-text">
             <h1>Faculties available at EduPrime</h1>
-            <p>A single university with a load of courses, tailored
+            <p class="text-regular">A single university with a load of courses, tailored
                 to satisfy any student's needs.
             </p>
           </div>
@@ -21,8 +21,11 @@
             </div>
             <div class="faculty-selected-right">
                 <h1>Law Faculty</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos alias reprehenderit suscipit, aspernatur sunt. Earum labore recusandae perspiciatis accusantium incidunt ducimus atque explicabo similique repellendus nam. Minima, magnam eum.</p>
-                <button class="main-btn brand-btn">Read More</button>
+                <p class="text-regular">Learning from world leading academics and practicioners, you'll not only receive an outstanding
+                    grounding in the theory of law, but you will be able to understand how those principles are applied in practice through
+                    a range of student-led activities and competitions.
+                </p>
+                <button class="btn brand-btn">Read More</button>
             </div>
         </div>
 

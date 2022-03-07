@@ -10,8 +10,12 @@
                 <div class="courses-text">
                     <img class="icon" src="../../assets/img/Books-icon.png" alt="Icona libri">
                     <h1>Thousands of courses for any type of student</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consectetur reiciendis ullam a! Itaque commodi aspernatur est rem autem assumenda, quasi possimus sed pariatur ullam nobis inventore quas provident omnis.</p>
-                    <button class="main-btn">Browse through courses</button>
+                    <p class="text-regular">At EduPrime it doesn't matter what domain you wish to pursue a career in.
+                        Here you can find a course that satisfies your needs within a click away and apply for a course
+                        in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks
+                        to the number of courses it provides.
+                    </p>
+                    <button class="btn main-btn">Browse through courses</button>
                 </div>
             </div>
             <div class="courses-right">

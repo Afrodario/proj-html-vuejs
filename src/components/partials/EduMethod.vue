@@ -5,8 +5,10 @@
             <div class="method-info method-text">
                 <img class="icon" src="../../assets/img/Exam-icon.png">
                 <h1>The most efficient examination method</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, suscipit porro. Ullam quis iure aut nulla obcaecati ipsam eos, nobis ducimus animi expedita, architecto tempora ipsum. Laudantium minima facere consectetur!</p>
-                    <button class="main-btn brand-btn">Discover the method</button>
+                <p class="text-regular">EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of our students.
+                    Every teacher from our university has an influence on how students are evaluated at his/her subject.
+                </p>
+                    <button class="btn brand-btn">Discover the method</button>
             </div>
             <div class="method-info method-img">
                 <img src="../../assets/img/Exam-Illustration.png">

@@ -2,7 +2,8 @@
   <section class="partners">
       <div class="container">
           <h1>Partners</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dignissimos reprehenderit ducimus fugiat deleniti cumque maxime, et repellat adipisci exercitationem provident, pariatur eum voluptas voluptates fuga qui eos quibusdam temporibus.</p>
+          <p class="text-regular">Leverage agile frameworks to provide a robust synopsis for high level overviews. 
+              Iterative approaches to corporate strategy.</p>
         <div class="partners-logo flex">
             <div v-for="(item, index) in partners"
                 :key="index" 
@@ -10,6 +11,9 @@
                 <img :src="require('../../assets/img/partner-' + item + '.png')">
             </div>
         </div>
+      </div>
+      <div class="wave-container">
+          <img src="../../assets/img/background-wave3.png">
       </div>
   </section>
 </template>
@@ -31,6 +35,11 @@ section.partners {
 
     .container {
         text-align: center;
+        
+        p {
+            width: 40%;
+            margin: 0 auto;
+        }
 
         .partners-logo {
             justify-content: space-around;
@@ -50,6 +59,13 @@ section.partners {
             }
 
         }
+    }
+    .wave-container {
+        height: 100px;
+        img {
+            width: 100%;
+            height: 50%;
+            }
     }
 }
 </style>

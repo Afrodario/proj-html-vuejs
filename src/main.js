@@ -20,6 +20,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faFontAwesome)
 library.add(faUserSecret)
@@ -38,6 +39,7 @@ library.add(faFacebookF)
 library.add(faTwitter)
 library.add(faInstagram)
 library.add(faChevronUp)
+library.add(faPaperPlane)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

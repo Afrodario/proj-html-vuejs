@@ -45,10 +45,5 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/variables.scss";
-// Inizio main
-main {
-    background-color: blue;
-}
-// Fine main
 
 </style>

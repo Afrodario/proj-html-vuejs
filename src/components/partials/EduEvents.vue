@@ -8,7 +8,7 @@
           <div class="upcoming-events">
               <EduEventsTab :sessionsDates="sessionsDates"/>
               <div class="upcoming-btn flex">
-                  <button class="main-btn">View All Events</button>
+                  <button class="btn main-btn">View All Events</button>
               </div>
           </div>
       </div>

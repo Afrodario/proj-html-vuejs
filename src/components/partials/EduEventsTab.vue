@@ -4,12 +4,12 @@
             :key="index" 
             class="event">
             <h2>Coaching Sessions</h2>
-            <span class="event-date">
+            <span class="event-date text-regular">
             <font-awesome-icon icon="fa-solid fa-calendar-days" />
                 {{item.date}}
             </span>
-            <p>Lorem ipsum</p>
-            <button class="brand-btn main-btn">
+            <p class="text-regular">Lorem ipsum dolor sit amet, cosectetur adipiscit elit, sed do eiusmod tempor[...]</p>
+            <button class="btn brand-btn">
             <font-awesome-icon icon="fa-solid fa-plus" />
                 Find More
             </button>

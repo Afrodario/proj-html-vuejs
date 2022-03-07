@@ -17,7 +17,7 @@
                       icon="fa-solid fa-sort-down" />
                   </li>
               </ul>
-              <button class="main-btn">View Courses</button>
+              <button class="btn main-btn">VIEW COURSES</button>
           </nav>
           <!-- Fine parte destra navbar -->
         </nav>
