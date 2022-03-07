@@ -23,14 +23,30 @@ export default {
 .faculty-tab {
     height: 100%;
     width: calc(100% / 7);
-    border: 1px solid black;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 5px;
     display: inline-block;
     text-align: center;
     color: $brandColor;
+    position: relative;
 
     &:hover {
         background-color: $brandColor;
         color: white;
+
+        &::after {
+            content: "";
+            width: 0; 
+            height: 0; 
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid $brandColor;
+            position: absolute;
+            bottom: -20px;
+            left: 75px;
+        }
+        
     }
 
     * {

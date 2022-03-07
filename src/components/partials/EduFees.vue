@@ -31,7 +31,6 @@ section.fees {
 
         .fees-info {
             width: calc(100% / 2);
-            border: 1px solid blue;
         }
 
         .fees-img {

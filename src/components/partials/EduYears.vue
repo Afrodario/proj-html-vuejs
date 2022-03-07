@@ -82,10 +82,11 @@ section.years {
 
     .years-paragraph {
         display: inline-block;
-        width: 30%;
-        border: 1px solid black;
+        width: 20%;
         position: absolute;
         color: white;
+        text-align: center;
+        font-size: 13px;
     }
 }
 

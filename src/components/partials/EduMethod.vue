@@ -31,7 +31,6 @@ section.method {
 
         .method-info {
             width: calc(100% / 2);
-            border: 1px solid blue;
         }
 
         .method-img {

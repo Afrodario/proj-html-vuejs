@@ -1,5 +1,5 @@
 <template>
-  <main class="debug">
+  <main>
       <EduJumbotron/>
       <EduCourses/>
       <EduFaculties/>

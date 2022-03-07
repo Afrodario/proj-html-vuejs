@@ -75,7 +75,8 @@ section.faculties {
     }
 
     .slider {
-        border: 1px solid gray;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
 
         .inner-slider {
             width: 80%;

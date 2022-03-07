@@ -28,12 +28,15 @@ export default {
 }
 
 .course {
-    border: 1px solid black;
+    border: 1px solid transparent;
     height: 200px;
     width: 200px;
     text-align: center;
     flex-direction: column;
     align-items: center;
+    margin: 0 10px;
+    justify-content: space-around;
+    font-size: 14px;
 }
 
 </style>

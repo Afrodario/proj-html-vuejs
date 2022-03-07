@@ -34,14 +34,18 @@ section.partners {
 
         .partners-logo {
             justify-content: space-around;
+            padding: 20px 0;
 
             .part-logo {
-                
+                margin: 10px;
+                width: 200px;
+                height: 50px;
 
                 img {
                     height: 100%;
                     object-fit: contain;
-                    width: 100px;
+                    width: 100%;
+                    opacity: 0.4;
                 }
             }
 

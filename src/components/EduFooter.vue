@@ -1,11 +1,11 @@
 <template>
-  <footer class="debug flex">
-      <div class="debug footer-themes flex flex-col">
+  <footer class="flex">
+      <div class="footer-themes flex flex-col">
           <div><span>Purchase</span></div>
           <div><span>Related</span></div>
       </div>
 
-      <div class="debug footer-info flex flex-col">
+      <div class="footer-info flex flex-col">
           <EduLogo/>
           <p>EduPrime is the most versatile WordPress theme for
               educational purposes, showcasing universities, courses,
@@ -16,7 +16,7 @@
           </div>
       </div>
 
-      <div class="debug footer-nav flex">
+      <div class="footer-nav flex">
           <nav>
               <h3>Get EduPrime</h3>
               <ul v-for="(item, index) in navLeft"
@@ -42,7 +42,7 @@
           
       </div>
 
-      <div class="debug footer-search flex flex-col">
+      <div class="footer-search flex flex-col">
         <input class="search-bar" type="text" placeholder="Search...">
         <h4>Search Categories</h4>
         <div class="footer-tags flex">
@@ -53,6 +53,8 @@
             </ul>
         </div>
         <span>ModelTheme. All rights reserved.</span>
+
+        <div class="arrow-up"></div>
       </div>
   </footer>
 </template>
@@ -132,6 +134,20 @@ export default {
         background-color: $brandColor;
         color: white;
 
+        .footer-themes {
+            justify-content: flex-end;
+            div {
+                border: 1px solid black;
+                padding: 10px;
+                margin: 10px;
+                background-color: black;
+                border-radius: 10px;
+                width: 120px;
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+
         .footer-info {
             justify-content: center;
             align-items: center;
@@ -153,6 +169,17 @@ export default {
             justify-content: space-around;
             align-items: center;
             width: 40%;
+            position: relative;
+
+            .arrow-up {
+                width: 40px;
+                height: 40px;
+                background-color: $buttonColor;
+                border-radius: 50%;
+                position: absolute;
+                right: 30px;
+                bottom: 15px;
+            }
         }
 
         .footer-tags {

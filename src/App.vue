@@ -10,6 +10,7 @@
 import EduHeader from './components/EduHeader.vue'
 import EduMain from './components/EduMain.vue'
 import EduFooter from './components/EduFooter.vue'
+import "@fontsource/fredoka-one"
 
 export default {
   name: 'App',
@@ -25,6 +26,8 @@ export default {
 // Importazione foglio di stile generale
 @import "./assets/style/common.scss";
 @import "./assets/style/variables.scss";
-
+body {
+  font-family: "Fredoka One";
+}
 
 </style>
