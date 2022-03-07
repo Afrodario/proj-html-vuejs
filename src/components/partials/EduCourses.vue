@@ -1,5 +1,10 @@
 <template>
     <section class="courses">
+        <div class="courses-banner">
+            <a href="#">
+                <span>Purchase EduPrime on Envato Market</span>
+            </a>
+        </div>
         <div class="container flex">
             <div class="courses-left">
                 <div class="courses-text">
@@ -26,6 +31,35 @@ export default {
 @import "../../assets/style/variables.scss";
 section.courses {
     background-color: white;
+
+    .courses-banner {
+        border: 1px solid black;
+        background-color: black;
+        max-width: 180px;
+        max-height: 50px;
+        font-size: 10px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 8px;
+        margin-left: 10px;
+        position: relative;
+
+        a {
+            color: white;
+        }
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid black;
+            position: absolute;
+            bottom: -10px;
+            left: 75px;
+        }
+    }
 
     .container {
         

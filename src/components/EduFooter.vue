@@ -1,8 +1,14 @@
 <template>
   <footer class="flex">
       <div class="footer-themes flex flex-col">
-          <div><span>Purchase</span></div>
-          <div><span>Related</span></div>
+            <div class="flex">
+                <img src="../assets/svg/svg-3.svg">
+              <span>Purchase Theme</span>
+            </div>
+            <div class="flex">
+                <img src="../assets/svg/svg-2.svg">
+              <span>Related Themes</span>
+            </div>
       </div>
 
       <div class="footer-info flex flex-col">
@@ -12,7 +18,27 @@
               secondary schools etc.
           </p>
           <div class="footer-icons">
-              ICONS
+              <ul>
+                  <li>
+                      <a href="#">
+                        <font-awesome-icon icon="fa-brands fa-facebook-f" />
+                      </a>
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <a href="#">
+                        <font-awesome-icon icon="fa-brands fa-twitter" />
+                      </a>
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <a href="#">
+                        <font-awesome-icon icon="fa-brands fa-instagram" />
+                      </a>
+                  </li>
+              </ul>
           </div>
       </div>
 
@@ -54,7 +80,9 @@
         </div>
         <span>ModelTheme. All rights reserved.</span>
 
-        <div class="arrow-up"></div>
+        <div class="arrow-up flex">
+            <font-awesome-icon icon="fa-solid fa-chevron-up" />
+        </div>
       </div>
   </footer>
 </template>
@@ -136,22 +164,46 @@ export default {
 
         .footer-themes {
             justify-content: flex-end;
+
             div {
+                align-items: center;
+                justify-content: space-between;
+                width: 125px;
                 border: 1px solid black;
                 padding: 10px;
+                padding-right: 40px;
                 margin: 10px;
                 background-color: black;
-                border-radius: 10px;
-                width: 120px;
+                border-radius: 6px;
+                width: 150px;
                 font-size: 10px;
                 text-align: center;
+
+                img {
+                    width: 10px
+                }
             }
         }
 
         .footer-info {
-            justify-content: center;
-            align-items: center;
+            justify-content: space-evenly;
             width: 25%;
+
+            .footer-icons {
+
+                ul {
+                    display: inline-block;
+                    svg {
+                    border: 2px solid $buttonColor;
+                    padding: 10px;
+                    border-radius: 50%;
+                    margin: 10px;
+                    width: 20px;
+                    height: 20px;
+                    color: white;
+                    }
+                }
+            }
         }
 
         .footer-nav {
@@ -188,6 +240,11 @@ export default {
                 width: 70%;
                 margin: 0 auto;
             }
+        }
+
+        .arrow-up {
+            justify-content: center;
+            align-items: center;
         }
 
     }

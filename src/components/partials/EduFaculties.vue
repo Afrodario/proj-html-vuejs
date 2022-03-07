@@ -69,6 +69,7 @@ export default {
 @import "../../assets/style/variables.scss";
 section.faculties {
     background-color: white;
+    padding-bottom: 100px;
 
     .faculties-text {
         text-align: center;

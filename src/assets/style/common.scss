@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-weight: 100;
 }
 
 .debug {
@@ -29,10 +30,10 @@
 
 ul {
     list-style-type: none;
+}
 
-    a {
-        text-decoration: none;
-    }
+a {
+    text-decoration: none;
 }
 
 .icon {

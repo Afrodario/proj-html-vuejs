@@ -56,6 +56,7 @@ export default {
 @import "../../assets/style/variables.scss";
 section.latest-courses {
     background-color: white;
+    padding-top: 100px;
 
     .courses-list {
         justify-content: space-around;

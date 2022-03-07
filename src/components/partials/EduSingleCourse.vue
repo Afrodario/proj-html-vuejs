@@ -5,9 +5,18 @@
         class="course flex">
         <img class="icon" :src="require('../../assets/img/' + item.path)">
         <h3>{{item.title}}</h3>
-        <span>Teacher: {{item.teacher}}</span>
-        <span>Price: {{item.price}}</span>
-        <button class="main-btn brand-btn">View Course</button>
+        <span>
+        <font-awesome-icon icon="fa-regular fa-user" />
+            Teacher: {{item.teacher}}
+        </span>
+        <span>
+        <font-awesome-icon icon="fa-regular fa-money-bill-1" />
+            Price: {{item.price}}
+        </span>
+        <button class="main-btn brand-btn">
+        <font-awesome-icon icon="fa-regular fa-eye" />
+            View Course
+        </button>
     </div>
   </div>
 </template>

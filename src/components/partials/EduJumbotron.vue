@@ -8,15 +8,21 @@
                         secondary schools etc.
                     </p>
                 <div class="jumbo-buttons">
-                    <button class="main-btn">Search</button>
-                    <button class="apply-btn">Apply for University</button>
+                    <button class="main-btn">
+                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                        Search courses
+                    </button>
+                    <button class="apply-btn">
+                    <font-awesome-icon icon="fa-solid fa-user-plus" />
+                        Apply for University
+                    </button>
                 </div>
             </div>
           </div>
-            <div class="panel">
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
+            <div class="panel flex flex-col">
+                <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+                <font-awesome-icon icon="fa-solid fa-book-open" />
+                <font-awesome-icon icon="fa-solid fa-chart-pie" />
             </div>
             <div class="wave-container">
                 <img src="../../assets/img/Wave-1.png">
@@ -80,6 +86,11 @@ export default {
             padding: 10px;
             position: absolute;
             background-color: $buttonColor;
+            color: white;
+
+            * {
+                margin: 5px 0;
+            }
         }
 
     }

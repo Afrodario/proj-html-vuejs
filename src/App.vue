@@ -28,6 +28,7 @@ export default {
 @import "./assets/style/variables.scss";
 body {
   font-family: "Fredoka One";
+  font-weight: 100;
 }
 
 </style>

@@ -4,9 +4,15 @@
             :key="index" 
             class="event">
             <h2>Coaching Sessions</h2>
-            <span class="event-date">{{item.date}}</span>
+            <span class="event-date">
+            <font-awesome-icon icon="fa-solid fa-calendar-days" />
+                {{item.date}}
+            </span>
             <p>Lorem ipsum</p>
-            <button class="brand-btn main-btn">Find More</button>
+            <button class="brand-btn main-btn">
+            <font-awesome-icon icon="fa-solid fa-plus" />
+                Find More
+            </button>
         </div>
   </div>
 </template>
@@ -39,7 +45,7 @@ export default {
     button {
         position: absolute;
         bottom: -25px;
-        left: 30%;
+        left: 25%;
     }
 }
 }

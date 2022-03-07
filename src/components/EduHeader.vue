@@ -11,8 +11,10 @@
               class="flex">
                   <li>
                       <a href="#">
-                          {{item}}
+                          {{item.name}}
                       </a>
+                      <font-awesome-icon v-if="item.dropdown==true"
+                      icon="fa-solid fa-sort-down" />
                   </li>
               </ul>
               <button class="main-btn">View Courses</button>
@@ -33,13 +35,34 @@ export default {
     data() {
         return {
             innerNav: [
-                "Home",
-                "Courses",
-                "About Us",
-                "News",
-                "Pages",
-                "Contact",
-                "Purchase"
+                {
+                    dropdown: true,
+                    name: "Home"
+                },
+                {
+                    dropdown: true,
+                    name: "Courses"
+                },
+                {
+                    dropdown: false,
+                    name: "About Us"
+                },
+                {
+                    dropdown: true,
+                    name: "News"
+                },
+                {
+                    dropdown: true,
+                    name: "Pages"
+                },
+                {
+                    dropdown: false,
+                    name: "Contact"
+                },
+                {
+                    dropdown: false,
+                    name: "Purchase"
+                },
             ]
         }
     }
@@ -64,10 +87,11 @@ export default {
             // Inizio inner nav
             .inner-nav {
                 li {
+                    margin: 0 10px;
+                    color: white;
                     a {
                         padding: 10px;
                         color: white;
-                        font-weight: bold;
                     }
                 }
             }
