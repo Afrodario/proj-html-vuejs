@@ -89,8 +89,15 @@ section.faculties {
         }
     }
 
+    .faculty-selected-right {
+        * {
+            margin: 15px 0;
+        }
+    }
+
     .faculty-active {
         width: calc(100% / 2);
+        padding-top: 30px;
     }
 }
 </style>

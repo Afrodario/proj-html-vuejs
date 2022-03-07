@@ -29,6 +29,7 @@ section.newsletter {
         justify-content: space-around;
         align-items: center;
         height: 100px;
+        color: white;
 
         .newsletter-input {
             position: relative;

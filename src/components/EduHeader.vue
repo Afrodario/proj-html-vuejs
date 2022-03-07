@@ -6,7 +6,7 @@
           <!-- Fine parte sinistra navbar -->
           <!-- Inizio parte destra navbar -->
           <nav class="inner-nav flex">
-              <ul v-for="(item, index) in innerNav"
+              <ul v-for="(item, index) in innerNavHeader"
                 :key="index" 
               class="flex">
                   <li>
@@ -32,38 +32,11 @@ export default {
     components: {
         EduLogo,
     },
+    props: {
+        innerNavHeader: Array
+    },
     data() {
         return {
-            innerNav: [
-                {
-                    dropdown: true,
-                    name: "Home"
-                },
-                {
-                    dropdown: true,
-                    name: "Courses"
-                },
-                {
-                    dropdown: false,
-                    name: "About Us"
-                },
-                {
-                    dropdown: true,
-                    name: "News"
-                },
-                {
-                    dropdown: true,
-                    name: "Pages"
-                },
-                {
-                    dropdown: false,
-                    name: "Contact"
-                },
-                {
-                    dropdown: false,
-                    name: "Purchase"
-                },
-            ]
         }
     }
 
@@ -89,10 +62,12 @@ export default {
                 li {
                     margin: 0 10px;
                     color: white;
+
                     a {
                         padding: 10px;
                         color: white;
                     }
+                    
                 }
             }
             // Fine inner nav

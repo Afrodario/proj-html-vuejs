@@ -37,7 +37,7 @@ export default {
 }
 
 .course {
-    border: 1px solid transparent;
+    border: 1px solid lightgray;
     height: 200px;
     width: 200px;
     text-align: center;
@@ -46,6 +46,7 @@ export default {
     margin: 0 10px;
     justify-content: space-around;
     font-size: 14px;
+    box-shadow: 1px 0px 3px 0px;
 }
 
 </style>

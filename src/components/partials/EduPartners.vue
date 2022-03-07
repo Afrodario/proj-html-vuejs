@@ -32,6 +32,7 @@ export default {
 <style lang="scss" scoped>
 section.partners {
     background-color: white;
+    padding-top: 30px;
 
     .container {
         text-align: center;

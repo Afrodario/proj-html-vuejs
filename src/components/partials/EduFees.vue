@@ -32,6 +32,10 @@ section.fees {
 
         .fees-info {
             width: calc(100% / 2);
+
+            * {
+                margin: 15px 0;
+            }
         }
 
         .fees-img {

@@ -45,7 +45,7 @@
       <div class="footer-nav flex">
           <nav>
               <h3>Get EduPrime</h3>
-              <ul v-for="(item, index) in navLeft"
+              <ul v-for="(item, index) in navLeftFooter"
                     :key="index">
                 <li class="text-regular">
                     <a href="#">
@@ -56,7 +56,7 @@
           </nav>
           <nav>
               <h3>Networking</h3>
-              <ul v-for="(item, index) in navRight"
+              <ul v-for="(item, index) in navRightFooter"
                     :key="index">
                 <li class="text-regular">
                     <a href="#">
@@ -79,12 +79,12 @@
         <h4>Search Categories</h4>
         <div class="footer-tags flex">
             <ul class="flex">
-                <li v-for="(item, index) in tags"
+                <li v-for="(item, index) in tagsFooter"
                 :key="index" 
                 class="category-tag text-regular">{{item}}</li>
             </ul>
         </div>
-        <span class="text-regular">ModelTheme. All rights reserved.</span>
+        <span class="text-regular copyright">ModelTheme. All rights reserved.</span>
 
         <div class="arrow-up flex">
             <font-awesome-icon icon="fa-solid fa-chevron-up" />
@@ -100,61 +100,13 @@ export default {
     components: {
         EduLogo,
     },
+    props: {
+        navLeftFooter: Array,
+        navRightFooter: Array,
+        tagsFooter: Array
+    },
     data () {
         return {
-            navLeft: [
-                {
-                    id: 0,
-                    text: "Request a website"
-                },
-                {
-                    id: 1,
-                    text: "Browse Themes"
-                },
-                {
-                    id: 2,
-                    text: "Payment Options"
-                },
-                {
-                    id: 3,
-                    text: "Support System"
-                },
-                {
-                    id: 4,
-                    text: "Checkout"
-                },
-                {
-                    id: 5,
-                    text: "Purchase Theme"
-                },                
-            ],
-            navRight: [
-                {
-                    id: 0,
-                    text: "Purchase Theme"
-                },
-                {
-                    id: 1,
-                    text: "Our Benefits"
-                },
-                {
-                    id: 2,
-                    text: "Our Team"
-                },
-                {
-                    id: 3,
-                    text: "Our Services"
-                },
-                {
-                    id: 4,
-                    text: "Other Products"
-                },
-                {
-                    id: 5,
-                    text: "My Account"
-                },                
-            ],
-            tags: ["Economy", "Design", "Coaching", "Business", "Medicine", "Law", "Fitness"]
         }
     }
 }
@@ -217,8 +169,13 @@ export default {
             align-items: center;
             width: 25%;
 
-            a {
-                color: white;
+            li {
+                margin: 8px 0;
+                
+                a {
+                    color: white;
+                }
+
             }
 
         }
@@ -263,7 +220,12 @@ export default {
                 flex-wrap: wrap;
                 width: 70%;
                 margin: 0 auto;
+                justify-content: flex-end;
             }
+        }
+
+        .copyright {
+            color: goldenrod;
         }
 
         .arrow-up {
